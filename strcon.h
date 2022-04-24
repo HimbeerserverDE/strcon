@@ -6,6 +6,8 @@
  * The last argument has to be NULL.
  */
 char *strcon(char *dest, ...);
+
+// It is up to the caller to free the returned pointer.
 char *astrcon(const char *src, ...);
 
 #endif

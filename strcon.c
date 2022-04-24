@@ -34,7 +34,7 @@ char *astrcon(const char *src1, ...)
 	va_end(aq);
 
 	char *dest = malloc(size);
-	strcat(dest, src1);
+	strcpy(dest, src1);
 
 	while ((src2 = va_arg(ap, const char*))) {
 		strcat(dest, src2);

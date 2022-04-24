@@ -1,5 +1,6 @@
 #include <assert.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include "../strcon.h"
 
@@ -18,6 +19,7 @@ int main()
 	printf("testing strcon_dest: exp: foobartest, got: %s\n", strcon_dest);
 	assert(strcmp(strcon_dest, "foobartest") == 0);
 
+	printf("\n");
 	printf("---------------\n");
 	printf("testing astrcon\n");
 	printf("---------------\n");
@@ -26,4 +28,7 @@ int main()
 
 	printf("testing astrcon_result: exp: foobartest, got: %s\n", astrcon_result);
 	assert(strcmp(astrcon_result, "foobartest") == 0);
+
+	free(astrcon_result);
+	return 0;
 }
