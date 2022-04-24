@@ -9,6 +9,7 @@ int main()
 	printf("--------------\n");
 	printf("testing strcon\n");
 	printf("--------------\n");
+	printf("\n");
 
 	char strcon_dest[11] = "foo";
 	char *strcon_result = strcon(strcon_dest, "bar", "test", NULL);
@@ -23,6 +24,7 @@ int main()
 	printf("---------------\n");
 	printf("testing astrcon\n");
 	printf("---------------\n");
+	printf("\n");
 
 	char *astrcon_result = astrcon("foo", "bar", "test", NULL);
 
